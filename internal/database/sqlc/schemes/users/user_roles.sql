@@ -1,0 +1,7 @@
+CREATE TABLE IF NOT EXISTS roles (
+
+    ID SERIAL PRIMARY KEY,
+
+    roleName TEXT NOT NULL UNIQUE
+
+);

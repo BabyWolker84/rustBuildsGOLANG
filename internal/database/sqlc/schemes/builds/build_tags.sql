@@ -1,0 +1,8 @@
+CREATE TABLE IF NOT EXISTS build_tags (
+
+    ID SERIAL PRIMARY KEY,
+    fkey_buildID INT NOT NULL REFERENCES build(ID),
+
+    fkey_TagID INT NOT NULL REFERENCES build_tag(ID) UNIQUE
+
+);

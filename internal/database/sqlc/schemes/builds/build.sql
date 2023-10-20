@@ -1,0 +1,12 @@
+CREATE TABLE IF NOT EXISTS build (
+
+    ID SERIAL PRIMARY KEY,
+    title TEXT NOT NULL,
+    views INT DEFAULT 0,
+    is_approved BOOLEAN DEFAULT false,
+    
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    modified_at TIMESTAMP DEFAULT NULL, 
+    deleted_at TIMESTAMP DEFAULT NULL
+    
+);
